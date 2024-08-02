@@ -6,7 +6,9 @@ const userRoutes = require('./routes/userroutes');
 // const config = require('./config');
 const app = express();
 const PORT = 8000;
-const MONGO_URI = 'mongodb://localhost:27017/mydatabase';
+// const MONGO_URI = 'mongodb://localhost:27017/mydatabase';
+const MONGO_URI = 'mongodb+srv://shamon:Shamon%401998@cluster0.fsmvhmd.mongodb.net/';
+
 
 // Middleware
 app.use(cors());
