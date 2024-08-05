@@ -4,6 +4,12 @@ const saltRounds = 10;
 const jwt= require('jsonwebtoken')
 // Display list of all users
 const user_list = async (req, res) => {
+  try {
+    let list=await User.find({ email: { $ne: req.body.email } })
+    return res.status(201).send({ status: "success", code: 200,data:list });
+  } catch (error) {
+    
+  }
   
 };
 const signup = async (req, res) => {

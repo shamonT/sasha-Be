@@ -8,8 +8,8 @@ const { Server } = require("socket.io");
 const { addsocketdetails } = require("./controllers/socket.controller");
 const app = express();
 const PORT = 8000;
-const MONGO_URI =
-  "mongodb+srv://shamonthaibe:Shamon%401998@cluster0.ruxbjbk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const MONGO_URI ="mongodb://localhost:27017/"
+//   "mongodb+srv://shamonthaibe:Shamon%401998@cluster0.ruxbjbk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 // Middleware
 app.use(cors());
